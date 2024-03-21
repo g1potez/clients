@@ -1,0 +1,41 @@
+$mainColor: #5be9af
+$hoverColor: #0e6944
+=flexCenter
+  justify-content: center
+  align-items: center
+
+=formCol
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 20px
+    input
+        width: 90%
+
+=formBlockStyle
+    .field-error
+      color: #f00
+      font-size: 12px
+    input
+      background-color: #ffffff
+      border-style: none
+      border-bottom: 1px solid #8d8d8d
+      padding: 5px
+      margin-bottom: 20px
+      width: 95%
+    .form-col
+      +formCol
+      @media (max-width: 455px)
+        flex-wrap: wrap
+      figure
+        display: flex
+        flex-direction: column
+        #gender
+          display: flex
+          figure
+            flex-direction: row
+            margin-right: 15px
+    select
+      padding: 0px 10px
+      border: none
+      border-bottom: 1px solid #8d8d8d

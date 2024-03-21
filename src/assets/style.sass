@@ -1,0 +1,36 @@
+@import './variables.sass'
+
+@font-face 
+    font-family: 'Inter'
+    src: url('./Inter-Regular.ttf')
+@font-face 
+    font-family: 'Inter-Bold'
+    src: url('./Inter-Bold.ttf')
+
+    
+*
+    margin: 0
+    padding: 0
+    outline: none
+    font-family: 'Inter', sans-serif
+
+h1, h2, h3, h4, h5, h6
+    font-family: 'Inter-Bold', sans-serif
+
+#app
+    display: flex
+    +flexCenter
+    height: 100vh
+
+button
+    cursor: pointer
+    margin-top: 30px
+    border: none
+    font-size: 20px
+    padding: 10px 20px
+    border-radius: 10px
+    background-color: $mainColor
+    color: #fff
+    transition: 0.3s
+    &:hover
+        background-color: $hoverColor
